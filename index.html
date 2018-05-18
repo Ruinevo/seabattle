@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Морской бой</title>
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,300i,400,500i,700i&amp;subset=cyrillic"
+        rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+
+
+</head>
+<body>
+
+<div class="app">
+  <div class="overlay"></div>
+  <section class="main main--welcome">
+    <h2>Добро пожаловать в игру "Морской бой"</h2>
+    <p>Введите Ваше имя</p>
+    <div class="name_wrapper">
+       <input type="text" placeholder="Имя игрока">
+    </div>
+    <button class="main-play">Начать игру</button>
+  </section>
+</div>
+
+<template id="game__template">
+  <div class="overlay"></div>
+  <section class="main main--game">
+    <div class="main-wrap">
+      <h2 class="title main--title">Ходит игрок: <span></span></h2>
+      <div class="comment"><p>Ход игры отображается здесь</p></div>
+      <div class="game-wrapper">
+      </div>
+    </div>
+  </section>
+
+</template>
+
+<template id="result__template">
+  <div class="overlay"></div>
+  <section class="main">
+    <h2 class="title result--title"></h2>
+    <button class="main-play">Сыграть еще</button>
+  </section>
+</template>
+
+
+<script src="js/util.js"></script>
+<script src="js/main.js"></script>
+
+
+
+
+</body>
+</html>
